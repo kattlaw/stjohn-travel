@@ -1,0 +1,108 @@
+#contact {
+    background-color:#fff;
+    background-image: url('../../assets/stfrancis.jpeg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: -10rem;
+}
+
+.contact_us > p {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5rem;
+    text-shadow: #000 2px 2px 2px;
+    color: #fff;
+  
+    font-weight: 700;
+}
+
+.register_form {
+	max-width: 800px;
+	margin: 55px auto;
+}
+
+.image {
+	float:left;
+	background-image: url("../../assets/coralbay.jpeg");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+  
+}
+
+.form {
+    float:right;
+    text-align: center;
+    height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: auto;
+    background-size: 100% 100%;
+    background-color: #fff;
+
+}
+
+ h1 {
+    color: #0a8789;
+    font-weight: 700 !important;
+    padding-top: 20px;
+	padding-bottom: 20px;  
+}
+
+.form > p {
+    color: #858585;
+
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.form_button {
+    background-color:#0a8789 !important
+}
+
+.form_button:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+
+@media screen and (max-width: 700px){
+	.image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	.form{
+		width: 70%;
+	}
+
+	.form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.image{
+		display: none;
+	}
+
+.form {
+		width: 100%;
+	}
+
+    h1{
+		text-align: center;
+	}
+
+	#registration-form .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+
+  

@@ -3,6 +3,7 @@ import background from './assets/trunkbay.jpeg';
 //import Main from './components/Main';
 import Explore from './components/Explore/Explore';
 import Visit from './components/Visit/Visit';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Navigation />
       <Explore />
       <Visit />
+      <Contact />
     </div>
   );
 }
