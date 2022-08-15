@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import Navigation from './components/Navigation/Navigation';
+import background from './assets/trunkbay.jpeg';
+//import Main from './components/Main';
+import Explore from './components/Explore/Explore';
+import Visit from './components/Visit/Visit';
 import './App.css';
 
 function App() {
+  const mainStyle={
+    backgroundImage: `url(${background})`,
+    height: '100vh',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={mainStyle}>
+        <h2> Welcome to Paradise</h2>
+      </div>
+      <Navigation />
+      <Explore />
+      <Visit />
     </div>
   );
 }
