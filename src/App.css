@@ -43,3 +43,8 @@ nav .nav-link:hover {
     color: #374d60;
 }
 
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 30px !important;
+    }
+}

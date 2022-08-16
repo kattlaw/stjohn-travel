@@ -59,7 +59,7 @@ const Navigation = (args) => {
                     <NavItem>
                     <NavLink className="nav-link" href="#visit">Visit</NavLink>
                     </NavItem>
-                    <NavLink className="nav-link" href="#contact">Contact</NavLink>
+                    <NavLink className="nav-link" href="#contact">Mailing List</NavLink>
                     </Nav>
                 </Collapse>
             </Navbar>

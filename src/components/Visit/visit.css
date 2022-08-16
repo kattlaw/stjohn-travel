@@ -1,7 +1,7 @@
 #visit {
     background-color: #1d223e;
     margin-top: -10rem;
-    margin-bottom: -50px;
+    margin-bottom: 80px;
 
 }
 
@@ -12,15 +12,16 @@
     color: #fff;
     text-shadow: none;
     font-weight: 700;
+    margin-bottom: 35px;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: center;
     margin-top: 35px;
     margin-bottom: 50px;
 }
-.slide_1{
+.slide_1 {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,10 +33,10 @@
     position: relative;
     transition: all 0.5s ease;
 }
-.slide_1:hover{
+.slide_1:hover {
     min-width: 350px;
 }
-.slide_1:hover .slide-info{
+.slide_1:hover .slide-info {
     transform: rotate(0deg);
     font-size: 22px;
     left: 20px;
@@ -44,12 +45,28 @@
 .slide-info{
     position: absolute;
     bottom: 50px;
-    right: 0;
+    right: 1;
     color: #fff;
+    text-shadow: 1px 1px 1px #000; 
     transform: rotate(-90deg);
     font-size: 13px;
     font-weight: 700;
     transition: all 0.5s ease;
+}
+
+.learn_more {
+    position: relative;
+    z-index: 2;
+    background-color: #1d223e !important;
+    display: none !important;
+}
+
+.slide_1:hover .learn_more {
+    display: block !important;
+}
+
+.learn_more:hover {
+    background-color: #374d60 !important;
 }
 
 @media screen and (max-width: 770px) {
@@ -69,8 +86,14 @@
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 500px) {
     #visit {
         margin-top: 30rem;
+        margin-bottom: 140px;
+        
+    }
+
+    .visit_stj > p {
+        font-size: 35px;
     }
   }

@@ -13,7 +13,6 @@
     padding-top: 5rem;
     text-shadow: #000 2px 2px 2px;
     color: #fff;
-  
     font-weight: 700;
 }
 
@@ -47,7 +46,7 @@
  h1 {
     color: #0a8789;
     font-weight: 700 !important;
-    padding-top: 20px;
+    padding-top: 70px;
 	padding-bottom: 20px;  
 }
 
@@ -61,44 +60,48 @@
 }
 
 .form_button {
-    background-color:#0a8789 !important
-}
+    background-color:#0a8789 !important;
+    margin-right: 5px;
+    border: 1px 1px 1px solid;
+    box-shadow: 1px 1px 2px #000;
+  }
 
 .form_button:hover {
     background-color: #fff !important;
-    color: #000 !important;
+    color: #0a8789 !important;
 }
 
 
-@media screen and (max-width: 700px){
-	.image{
-		width: 30%;
-	    background-position: 60%;
+@media screen and (max-width: 767px){
+	.image {
+		width: 40%;
+	    background-position: center;
 	}
 
-	.form{
-		width: 70%;
-	}
+    .form {
+        width: 60%;
+    }
 
-	.form-control{
-		width: 100%;
-	}
 }
 
 @media screen and (max-width: 500px){
-	.image{
+	.image {
 		display: none;
 	}
 
-.form {
-		width: 100%;
-	}
+    .form {
+        width: 100%;
+    }
 
-    h1{
+    h1 {
 		text-align: center;
 	}
 
-	#registration-form .btn{
+    .contact_us > p {
+        font-size: 35px;
+    }
+
+	form_button {
 		width: 100%;
 		margin-top: 20px;
 	}
