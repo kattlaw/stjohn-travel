@@ -4,6 +4,7 @@ import background from './assets/trunkbay.jpeg';
 import Explore from './components/Explore/Explore';
 import Visit from './components/Visit/Visit';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Explore />
       <Visit />
       <Contact />
+      <Footer />
     </div>
   );
 }

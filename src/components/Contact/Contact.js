@@ -44,9 +44,6 @@ const Contact = () => {
         onSubmit={handleSubmit}
         
        >
-   
-   
-        
         <section id="contact">
             <Container className="contact_us">
                 <p>Join Our Mailing List</p>

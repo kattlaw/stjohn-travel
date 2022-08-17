@@ -41,7 +41,7 @@
 .explore_stj > p {
     text-align: center;
     font-size: 50px;
-    padding-top: 30px;
+    padding-top: 5rem;
     color: #0a8789;
     text-shadow: none;
     font-weight: 700;
@@ -53,10 +53,16 @@
     color: #858585;
 }
 
+@media screen and (max-width: 770px) {
+    #explore {
+       
+    }
+  }
+
 @media screen and (max-width: 500px) {
     #explore {
         margin-top: -10px;
-        margin-bottom: -200px;
+        margin-bottom: -60px;
     }
 
     .explore_stj > p {

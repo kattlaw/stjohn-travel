@@ -45,7 +45,7 @@
 .slide-info{
     position: absolute;
     bottom: 50px;
-    right: 1;
+    right: 0;
     color: #fff;
     text-shadow: 1px 1px 1px #000; 
     transform: rotate(-90deg);
@@ -86,10 +86,10 @@
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 519px) {
     #visit {
         margin-top: 30rem;
-        margin-bottom: 140px;
+        margin-bottom: 130px;
         
     }
 

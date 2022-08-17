@@ -42,7 +42,7 @@ const Visit = () => {
                     backgroundImage: `url(${windmill})`
                 }}>
                     <div className="slide-info">
-                        <p>Neptune's Lookout</p>
+                        <p>The Views</p>
                         <Button className="learn_more">More Info</Button>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Visit = () => {
                     backgroundImage: `url(${turtle})`
                 }}>
                     <div className="slide-info">
-                        <p>Maho Bay Turtles</p>
+                        <p>Sea Turtles</p>
                         <Button className="learn_more">More Info</Button>
                     </div>
                 </div>
