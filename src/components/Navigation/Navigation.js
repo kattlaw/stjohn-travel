@@ -9,7 +9,6 @@ import {
     Collapse
 } from 'reactstrap';
 
-
 const Navigation = (args) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -48,8 +47,7 @@ const Navigation = (args) => {
                     style={{
                         color: "transparent",
                         border: "2px solid #5e6060"
-                        
-                       
+                            
                     }} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ms-auto" navbar>

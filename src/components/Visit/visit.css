@@ -1,12 +1,12 @@
 #visit {
     background-color: #1d223e;
     margin-top: -10rem;
-    margin-bottom: 80px;
-
+    margin-bottom: 160px;
 }
 
 .visit_stj > p {
     text-align: center;
+    font-family:var(--font-family);
     font-size: 50px;
     padding-top: 5rem;
     color: #fff;
@@ -49,7 +49,7 @@
     color: #fff;
     text-shadow: 1px 1px 1px #000; 
     transform: rotate(-90deg);
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 700;
     transition: all 0.5s ease;
 }
@@ -69,13 +69,38 @@
     background-color: #374d60 !important;
 }
 
+@media screen and (max-width: 1062px) {
+    .slide_1:hover {
+       min-width:200px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .gallery>* {
+        flex:1 1 1 130px;
+        margin: 25px;
+    }
+
+    .slide_1:hover {
+        min-width: 220px;
+    }
+    #visit {
+        padding-bottom: 65rem;
+    }
+}
+
 @media screen and (max-width: 770px) {
     #visit {
         margin-top: 22rem;
         padding-bottom: 140rem;
     }
 
-    .gallery {
+    .gallery>* {
         flex-direction: column;
     }
     .slide_1 {

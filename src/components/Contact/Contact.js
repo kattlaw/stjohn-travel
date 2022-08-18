@@ -50,7 +50,7 @@ const Contact = () => {
                <div className="register_form">
                 <div className="image"></div>
                 <div className="form">
-                    <h1>Sign Up!</h1>
+                    <h1>Sign Up</h1>
                     <p>Join our mailing list for exclusive news, deals, and everything St. John!</p>
                     <Form>
                         <FormGroup row>
