@@ -8,7 +8,7 @@
     margin-top: -10rem;
 }
 
-.contact_us > p {
+.contact_us > h3 {
     text-align: center;
     font-size: 50px;
     padding-top: 4rem;
@@ -21,7 +21,7 @@
 	margin: 55px auto;
 }
 
-.image {
+.image_form {
 	float:left;
 	background-image: url("../../assets/stfrancis.jpeg");
 	height: 500px;
@@ -75,7 +75,7 @@
 
 
 @media screen and (max-width: 767px){
-	.image {
+	.image_form {
 		width: 40%;
 	    background-position: center;
 	}
@@ -94,8 +94,8 @@
     #contact {
         margin-bottom: -10px
     }
-	.image {
-		display: none;
+	.image_form {
+		display: none !important;
 	}
 
     .form {
@@ -126,5 +126,9 @@
 
 }
 
-
+@media screen and (max-width: 375px){
+    #contact {
+        height: 125vh;
+    }
+}
   

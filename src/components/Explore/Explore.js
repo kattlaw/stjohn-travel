@@ -10,14 +10,14 @@ const Explore = () => {
     return (
         <section id="explore">
             <Container className="explore_stj">
-                <p>Explore</p>
+                <h3>Explore</h3>
                 <h5>Discover the Island of St. John</h5>
                 <div>
                     <Row>
                         <Col md="4">
                             <Card 
                                 inverse
-                                className="my-2">
+                                className="explore_card my-2">
                                 <CardImg
                                     alt="cinnamon bay beach"
                                     src= {beach}
@@ -44,7 +44,7 @@ const Explore = () => {
                         <Col md="4">
                         <Card 
                             inverse
-                            className="my-2">
+                            className="explore_card my-2">
                                 <CardImg
                               
                                     alt="sea trutle"
@@ -73,7 +73,7 @@ const Explore = () => {
                         <Col md="4">
                         <Card 
                             inverse
-                            className="my-2">
+                            className="explore_card my-2">
                                 <CardImg
                                     alt="hiking view"
                                     src= {hiking}

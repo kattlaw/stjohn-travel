@@ -13,6 +13,10 @@
 .footer_stj {
     background-color: #fff;
     font-size: 15px;
+    background-image: url('../../assets/trees.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom right; 
 }
 
 .google_map {

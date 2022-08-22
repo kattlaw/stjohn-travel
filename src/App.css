@@ -36,13 +36,15 @@ h2 {
 
 nav .nav-link {
     color: #1d223e;
-    font-weight: 700;
-    font-size: 20px;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 900 !important;
+    font-size: 22px;
     
 }
 
 nav .nav-link:hover {
-    color: #374d60;
+    color: #0a8789;
+    text-shadow:1px 1px 1px #fff;
 }
 
 @media screen and (max-width: 500px) {

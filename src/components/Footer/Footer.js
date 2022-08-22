@@ -32,18 +32,21 @@ const Footer = () => {
                   <Col className="links_list">
                            
                             <h6> St. John Travel </h6>
+                            <span>
                             <ul className="footer_link">
                                 <li><a href="#footer">Who We Are</a></li>
                                 <li><a href="#footer">Contact Us</a></li>
                                 <li><a href="#contact">Mailing List</a></li>
                                 <li><a href="#footer">FAQ</a></li>
                             </ul>
+                            </span>
                            
                         </Col>
                       
                       
                         <Col className="links_list2">
                             <h6> Quick Links </h6>
+                            <span>
                             <ul className="footer_link2">
                                 <li><a href="#footer">Weather</a></li>
                                 <li><a href="#footer">Accomodations</a></li>
@@ -51,7 +54,7 @@ const Footer = () => {
                                 <li><a href="#footer">Beaches</a></li>
                                 <li><a href="#footer">Dining</a></li>
                             </ul>
-                            
+                           </span> 
                         </Col>
                   </Row>
                    

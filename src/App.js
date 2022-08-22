@@ -2,6 +2,7 @@ import Navigation from './components/Navigation/Navigation';
 import background from './assets/trunkbay.jpeg';
 import Explore from './components/Explore/Explore';
 import Visit from './components/Visit/Visit';
+import Booking from './components/Booking/Booking';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
       <Navigation />
       <Explore />
       <Visit />
+      <Booking />
       <Contact />
       <Footer />
     </div>

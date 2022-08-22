@@ -46,9 +46,9 @@ const Contact = () => {
        >
         <section id="contact">
             <Container className="contact_us">
-                <p>Join Our Mailing List</p>
+                <h3>Join Our Mailing List</h3>
                <div className="register_form">
-                <div className="image"></div>
+                <div className="image_form"></div>
                 <div className="form">
                     <h1>Sign Up</h1>
                     <p>Join our mailing list for exclusive news, deals, and everything St. John!</p>

@@ -4,15 +4,21 @@
     margin-bottom: 160px;
 }
 
+.visit_stj {
+    background-image: url('../../assets/Coconut-Tree-Vector-PNG.png');
+    background-repeat: no-repeat;
+    background-size:  370px 180px;
+    background-position: 50% 0px;
+}
 .visit_stj > p {
     text-align: center;
     font-family:var(--font-family);
     font-size: 50px;
     padding-top: 5rem;
     color: #fff;
-    text-shadow: none;
+    text-shadow: 1px 1px 1px #000;
     font-weight: 700;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
 }
 
 .gallery {
