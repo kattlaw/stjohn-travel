@@ -1,10 +1,36 @@
 import { Container, Label, Col, FormGroup, Button } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-
 import './contact.css';
+import { gsap } from 'gsap';
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRef, useEffect} from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Contact = () => {
+    
+    const formRef = useRef();
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+        gsap.from(formRef.current, {
+            scrollTrigger: {
+                trigger: "#contact",
+                start: "top bottom",
+                end: "+=500",
+                //markers: true,
+                scrub: 1,
+                invalidateOnRefresh: true
+            },
+          x: "-300%",   
+        });
+
+        ScrollTrigger.refresh();
+
+          });
+
+          return () => ctx.revert();
+        }, []);
 
     const handleSubmit = (values, { resetForm }) => {
         console.log('form values:', values);
@@ -46,7 +72,7 @@ const Contact = () => {
        >
         <section id="contact">
             <Container className="contact_us">
-                <h3>Join Our Mailing List</h3>
+                <h3 ref={formRef}>Join Our Mailing List</h3>
                <div className="register_form">
                 <div className="image_form"></div>
                 <div className="form">

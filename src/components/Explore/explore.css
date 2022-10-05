@@ -1,68 +1,190 @@
+
 #explore {
     background-color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
 }
 
-.explore_card {
-    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.25), -3px -3px 20px 5px rgba(0,0,0,0.22);
+.section-explore-header {
+background-image: url('../../assets/coconutpng.png');
+background-repeat: no-repeat;
+background-attachment: local;
+background-size:  contain;
+background-position: right;
+box-shadow: 0 0 8px 8px  white inset;
+margin-bottom: 3rem;
+}
+
+.gallery_explore {
+  height: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 6rem;
+  margin-top: 0;
+  padding-top: 0;
+ 
+}
+
+.no_gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.gallery_explore img {
+    max-width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;  
+}
+
+.hover-image {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
     cursor: pointer;
-    transition: 0.4s;
-    border: none !important;
+  }
 
-}
+  .hover-image  {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+  }
 
-.explore_card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.explore_card .card_title {
-    text-align: center;
-    text-shadow: 1px 1px 1px #000;
-    font-size: 25px;
-}
-
-.explore_card .card_button { 
-  margin: 0;
+.hover-image::before,
+.hover-image::after {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 85%;
-  left: 50%;
-  color: #0a8789 !important;
-  transform: translate(-50%, -50%);
-  background-color: #fff !important;
-  border: 1px 1px 1px solid;
-  box-shadow: 1px 1px 2px #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+  margin-bottom: 0;
 }
+  .hover-image figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-weight: 400;
+  }
+  
+  .hover-image img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
 
-.explore_card .card_button:hover {
-    background-color: #0a8789 !important;
-    color:#fff !important;
+  .hover-image:hover::before,
+  .hover-image.hover-image:hover::after::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .hover-image:hover > img {
+    opacity: 0.5;
+  }
+  
+  .hover-image:hover figcaption {
+    opacity: 1;
+  }
 
-}
-.explore_stj > h3 {
-    text-align: center;
-    font-size: 50px;
+
+.section-explore-header > h3 {
+    text-align: left;
+    margin-left: 10rem;
+    font-size: 4.5rem;
     padding-top: 4rem;
-    margin-bottom: 10px;
-    color: #0a8789;;
-    font-weight: 700;
+    margin-bottom: 0.625rem;
+    color:  #454343;
+    font-weight: 300;
+    z-index: 2;   
 }
 
-.explore_stj> h5 {
+.section-explore-header > h5 {
     text-align: center;
-    font-size: 25px;
-    padding-bottom: 15px;
-    color: #858585;
+    font-size: 1.6rem;
+    color: #000;
+    line-height: 1.9rem;
+    font-family:'Nanum Myeongjo', serif;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+    z-index: 2;
+    margin-right: 4rem;
 }
 
-@media screen and (max-width: 500px) {
-    #explore {
-        margin-top: -10px;
-        margin-bottom: -60px;
+.bottom-line {
+    padding-bottom: 2rem;
+    margin-left: 10%;
+}
+
+.explore-bottom-container {
+  padding-top: 5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.sea-turtle {
+  max-width: 25%;
+  z-index: 1;
+  background:transparent;
+  margin-left: 3rem;
+  padding-top: 2rem;
+  position: absolute;
+  float: left;
+  opacity: 0.9;
+}
+
+
+
+.water {
+  width: 100%;
+  float: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 575px) {
+
+
+    #explore > p {
+        font-size: 2.188rem;
+        
     }
 
-    .explore_stj > p {
-        font-size: 35px;
-        
+    .section-explore-header > h3 {
+      text-align: center;
+      margin: 0;
+     
+    }
+
+    .section-explore-header > h5 {
+      font-size: 1.2rem;
+      margin-right: 3.5rem;
+
     }
 }

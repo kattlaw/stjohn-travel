@@ -27,7 +27,7 @@ const Navigation = (args) => {
             <Navbar {...args} 
             style={{
                 backgroundColor: navColor, 
-                transition: "all 1s",
+                transition: "all 1s"
                 }} 
             fixed="top"
             expand="lg">
@@ -37,8 +37,8 @@ const Navigation = (args) => {
                     style={{ 
                         color: "#0a8789",
                         fontWeight: 700,
-                        textShadow: "1px 1px 1px #fff",
-                        fontSize:"30px"
+                        textShadow: ".063rem .063rem .063rem #fff",
+                        fontSize:"1.875rem"
                     }}> 
                     St. John
                 </NavbarBrand>
@@ -46,7 +46,8 @@ const Navigation = (args) => {
                     onClick={toggle} 
                     style={{
                         color: "transparent",
-                        border: "2px solid #5e6060"
+                        border: ".125rem solid #5e6060",
+        
                             
                     }} />
                 <Collapse isOpen={isOpen} navbar>
@@ -55,10 +56,10 @@ const Navigation = (args) => {
                     <NavLink className="nav-link" href="#explore">Explore</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink className="nav-link" href="#visit">Visit</NavLink>
+                    <NavLink className="nav-link" href="#travel">Travel</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink className="nav-link" href="#booking">Book</NavLink>
+                    <NavLink className="nav-link" href="#blog">Discover</NavLink>
                     </NavItem>
                     <NavLink className="nav-link" href="#contact">Contact</NavLink>
                     </Nav>

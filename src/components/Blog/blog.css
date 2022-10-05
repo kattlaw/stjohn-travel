@@ -1,0 +1,422 @@
+#blog {
+    padding-top: 3rem;
+    background-color: #fff;
+}
+
+.section-blog-header {
+    background-color: #1d223e;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),
+    rgba(90, 90, 90, 0.6)), url('../../assets/perfect.jpeg');
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-position: center;
+    background-attachment:local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    margin-bottom: 5rem;
+}
+
+
+.section-blog-header > h3 {
+    text-align: center;
+    font-family:var(--font-family);
+    font-size: 4.3rem;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    padding-top: 3rem;
+    z-index: 1;
+    text-shadow: 1px 2px 3px #000; 
+}
+
+.section-blog-header> h5 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    z-index: 1;
+    color: #fff;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.blog-grid-container .blog-info-one, .blog-info-two, .blog-info-three {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2rem;
+}
+
+.blog-image-one img {
+    width: 100%;   
+}
+
+.food-back {
+    width: 90%;
+    height: 100%;
+    top: -1%;
+    right: -5%;
+    background: #f7ead8;
+    z-index: -1;
+    transform: rotate(15deg);
+    position: fixed;
+    margin-right: 1rem;
+}
+
+.blog-image-two img  {
+    width: 100%;  
+}
+
+.cruz-back {
+    width: 95%;
+    height: 100%;
+    bottom: -9%;
+    right: -4%;
+    background: #e6e8ef;
+    z-index: -1;
+    transform: rotate(.00001deg);
+    position: fixed;
+    margin-left: 1rem;
+}
+
+
+.blog-image-three img {
+    width: 100%;
+}
+
+.turtle-back {
+    width: 90%;
+    height: 100%;
+    top: -2%;
+    left: -3%;
+    background: #f5f0e7;
+    z-index: -1;
+    transform: rotate(-15deg);
+    position: fixed;
+    margin-left: 1rem;
+}
+
+
+ .blog-grid-container h4 {
+    width: 10rem;
+    font-size: .75rem !important;
+    margin-top: 0.5rem;
+    margin-left: 20rem;
+    padding:0.5rem;
+    position: relative;
+    font-family: 'Nanum Myeongjo', serif;
+    cursor: pointer;
+    text-transform: uppercase;   
+}
+
+.blog-grid-container button {
+    border: solid .5px rgb(86, 84, 84);
+    border-radius: 15px;
+    padding: .8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.blog-grid-container button:hover {
+    background:#1d223e;
+    color: #fff;
+}
+
+.blog-bottom-container {
+    margin-bottom: 0;
+}
+
+.sand {
+    max-width: 20%;
+    float: left;
+    margin-top: 5rem;
+    opacity: .4;
+    z-index: -1;
+    background: transparent;
+    transform: rotate(95deg);  
+}
+
+.waves {
+    opacity: 0.4;
+    max-width: 40%;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    float: right;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .blog-grid-container {
+        margin-top: 3rem;
+        /*margin-bottom: 15rem;*/
+       
+    }
+
+    .blog-image-one {
+        transform: rotate(-10deg);
+    }
+
+    .blog-info-one {
+        padding-top: 9rem;
+        padding-left: 3rem !important;
+        
+    }
+
+    .blog-image-two {
+        display: flex;
+        justify-content: center;
+        transform: rotate(.00001deg);
+    }
+
+
+    .blog-info-two {
+        padding-top: 10rem;
+       
+    }
+
+    .blog-image-three {
+        transform: rotate(5deg);
+    }
+
+    .blog-info-three {
+        padding-top: 10rem;
+        text-align: center; 
+    }
+
+    .spacer-one, .spacer-two {
+        padding: 2rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .blog-grid-container {
+        margin-top: 4rem;
+        /*margin-bottom: 13rem;*/
+
+    }
+
+    .blog-image-one {
+        transform: rotate(-5deg);
+    }
+
+    .blog-info-one {
+        padding-top: 6rem;
+        padding-left: 3rem !important;
+    }
+
+
+    .blog-info-two {
+        padding-top: 6rem;
+       
+    }
+
+    .blog-image-two {
+        display: flex;
+        justify-content: center;
+        transform: rotate(.00001deg) 
+    }
+
+    .cruz-back {
+        width: 95%;
+        height: 100%;
+        bottom: -10%;
+        right: -4%;
+        background: #e6e8ef;
+        z-index: -1;
+        transform: rotate(.00001deg);
+        position: fixed;
+        margin-left: 1rem;
+    }
+    
+
+    .blog-image-three {
+        transform: rotate(5deg);
+    }
+
+    .blog-info-three {
+        padding-top: 6rem;
+        padding-left: 3rem !important;
+    }
+
+    .blog-grid-container h4 {
+        width: 10rem;
+        font-size: .75rem !important;
+        margin-top: 0.5rem;
+        margin-left: 10rem;
+        padding:0.5rem;
+        position: relative;
+        z-index: 5;
+        font-family: 'Nanum Myeongjo', serif;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .blog-grid-container .blog-info-one, .blog-info-two, .blog-info-three {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .spacer-one, .spacer-two {
+        padding: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /*#blog {
+        height: 150vh;
+    }*/
+
+    .blog-grid-container {
+        margin-top: 3rem;
+        /*margin-bottom: 12rem;*/
+    }
+    .blog-image-one {
+        transform: rotate(-5deg);
+    }
+
+    .blog-info-one {
+        padding-top: 4rem;
+    }
+
+    .blog-image-two {
+     display: flex;
+     justify-content: center;
+     transform:rotate(.00001deg);
+     
+    }
+
+    .cruz-back {
+        width: 95%;
+        height: 100%;
+        bottom: -11%;
+        right: -4%;
+        background: #e6e8ef;
+        z-index: -1;
+        transform: rotate(.00001deg);
+        position: fixed;
+        margin-left: 1rem;
+    }
+    
+    .blog-info-two {
+        padding-top: 5rem; 
+    }
+
+    .blog-image-three {
+        display: flex;
+        justify-content: center;
+        transform: rotate(5deg);
+    }
+
+    .turtle-back {
+        margin-left: 1rem;
+    }
+    .blog-info-three {
+        padding-top: 5rem;
+    }
+
+    .blog-grid-container h4 {
+        width: 10rem;
+        font-size: .75rem !important;
+        margin-top: 0.5rem;
+        margin-left: 10rem;
+        padding:0.5rem;
+        position: relative;
+        z-index: 5;
+        font-family: 'Nanum Myeongjo', serif;
+        cursor: pointer;
+        text-transform: uppercase; 
+    }
+
+    .blog-grid-container h4 button {
+        margin-left: -2rem !important;
+    }
+
+    .blog-grid-container .blog-info-one, .blog-info-two, .blog-info-three {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .spacer-one, .spacer-two {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px ) {
+ 
+    .blog-grid-container {
+        margin-top: 3rem;
+        /*margin-bottom: 12rem;*/
+      
+    }
+    
+    .blog-image-one {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .blog-info-one {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+   .blog-image-two {
+        display: flex;
+        justify-content: center;
+   }
+
+   .blog-info-two {
+        padding-top: 1rem;
+        text-align:center;
+   }
+
+   .blog-image-three {
+        display: flex;
+        justify-content: center;
+   }
+
+   .blog-info-three {
+        padding-top: 1rem;
+        text-align: center;
+   }
+
+   .blog-grid-container img {
+        width:75%;
+        height: 100%;  
+   }
+
+   .blog-grid-container .blog-info-one, .blog-info-two, .blog-info-three {
+        font-size: 1rem;
+    }
+
+    .blog-grid-container h4 {
+        width: 10rem;
+        font-size: .75rem !important;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        padding:0.5rem;
+        position: relative;
+        z-index: 5;
+        font-family: 'Nanum Myeongjo', serif;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .spacer-one, .spacer-two {
+        display: none;
+    }
+
+    .section-blog-header > h5 {
+        font-size: 1.2rem;
+    }
+}

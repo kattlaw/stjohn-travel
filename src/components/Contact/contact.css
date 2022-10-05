@@ -3,69 +3,72 @@
     background-image: linear-gradient(rgba(208, 201, 201, 0.5), rgba(59, 59, 57, 0.5)),url('../../assets/stfrancis.jpeg');
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     background-repeat: no-repeat;
-    margin-top: -10rem;
+    padding-top: 1rem;
+    height: 100vh;
 }
 
 .contact_us > h3 {
     text-align: center;
-    font-size: 50px;
+    font-size: 4rem;
     padding-top: 4rem;
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
+    text-shadow: 1px 2px 3px #000;
 }
 
 .register_form {
-	max-width: 700px;
-	margin: 55px auto;
+	max-width: 43.75rem;
+	margin: 3.438rem auto;
 }
 
 .image_form {
 	float:left;
 	background-image: url("../../assets/stfrancis.jpeg");
-	height: 500px;
+	height: 31.25rem;
 	width: 50%;
 	background-size: cover;
 	background-position: 25%;
     border: transparent;
-    border-radius: 7px 0px 0px 7px;
-    box-shadow: #858585 1px 2px 8px;
+    border-radius: .438rem 0rem 0rem .438rem;
+    box-shadow: #858585 .063rem .125rem .5rem;
 }
+
+
 
 .form {
     float:right;
     text-align: center;
-    height: 500px;
+    height: 31.25rem;
     width: 50%;
-    min-width: 250px;
+    min-width: 15.625rem;
     padding: auto;
     background-size: 100% 100%;
     background-color: #fff;
     border: transparent;
-    border-radius: 0px 7px 7px 0px;
-    box-shadow: #858585 2px 2px 7px;
+    border-radius: 0rem .438rem .438rem 0rem;
+    box-shadow: #858585 .125rem .125rem .438rem;
 }
 
  h1 {
     color: #0a8789;
     font-weight: 700 !important;
-    font-size: 50px !important;
-    padding-top: 60px;
-	padding-bottom: 15px;  
+    font-size: 3.125rem !important;
+    padding-top: 3.75rem;
+	padding-bottom: 0.938rem;  
 }
 
 .form > p {
     color: #858585;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 .form_button {
     background-color:#0a8789 !important;
-    margin-right: 5px;
-    border: 1px 1px 1px solid;
-    box-shadow: 1px 1px 2px #000;
+    margin-right: .313rem;
+    border: .063rem .063rem .063rem solid;
+    box-shadow: .063rem .063rem .125rem #000;
   }
 
 .form_button:hover {
@@ -85,50 +88,49 @@
     }
 
     .form-control {
-        margin-left: 15px;
+        margin-left: .938rem;
     }
 
 }
 
 @media screen and (max-width: 505px){
-    #contact {
-        margin-bottom: -10px
+    .contact_us > h3 {
+        font-size: 3.125rem;
+        padding-bottom: 1rem;
     }
+
 	.image_form {
-		display: none !important;
+		display: none;
 	}
 
     .form {
-        width: 100%;
+        width: 80%;
         border: transparent;
-        border-radius: 7px 7px 7px 7px;
-        margin-top: -40px;
-       
+        border-radius: .438rem;
+        margin-top: -2.5rem;
+        margin-right: 2.7rem;
+        padding: 1rem;
     }
+
 
     h1 {
 		text-align: center;
-        padding-top: 45px;
+        padding-top: 2.813rem;
 	}
     
-    .form-control {
-        margin-left: 20px;
-    }
+    /*.form-control {
+        margin-left: 1.25rem;
+    }*/
 
     .contact_us > p {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
 
 	form_button {
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 1.25rem;
 	}
 
 }
 
-@media screen and (max-width: 375px){
-    #contact {
-        height: 125vh;
-    }
-}
-  
+

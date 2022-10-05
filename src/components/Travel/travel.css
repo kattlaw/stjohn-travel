@@ -1,0 +1,124 @@
+#travel {
+    padding-top: 3rem;
+    margin-bottom: 10rem;
+    background: linear-gradient(
+        to bottom,
+        #f5f0e7 0%,
+        #f5f0e7 60%,
+        #fff 60%,
+        #fff 100%
+      );
+}
+
+#travel > h3 {
+    text-align: center;
+    font-family:var(--font-family);
+    font-size: 3.125rem;
+    color: #454343;
+    font-weight: 300;
+    position: relative;
+    padding-top: 4rem;
+}
+
+#travel > h5 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+}
+
+.first, .second {
+    font-size: 4.5rem;
+    padding: 1rem;
+}
+
+.swiper-container {
+    margin: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;   
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+.swiper-button-next {
+    position: absolute!important;
+    left: 100% !important;
+    top: 100% !important;
+    margin: 2rem;
+  
+    display: block;
+  
+    color: #c5bfbf !important;
+      
+      
+}
+
+.swiper-button-prev {
+    display: hidden;
+}
+.travel-card {
+    border: 1px transparent !important;
+    border-radius:0 !important;
+}
+
+
+.travel-title {
+    font-weight: 800;
+    margin-top: -0.625rem !important;
+}
+
+.travel-text {
+    color:#454549;
+    font-weight: 600;
+}
+.circle {
+    font-size: .25rem;
+    vertical-align: middle;
+    padding: 0 .313rem;
+
+}
+
+.rating {
+    color: goldenrod;
+    padding: 0;
+}
+
+.travel-card button {
+    background-color:transparent;
+    color:#454549;
+    border: .0663rem solid #454549;
+    border-radius: 0;
+    box-shadow: 0.063rem 0.125rem #000;
+}
+
+.travel-card button:hover {
+    background-color:#1d223e;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 575px) {
+
+    #travel > h5 {
+        font-size: 1.2rem;
+        letter-spacing: .08rem;
+    }
+}
