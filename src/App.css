@@ -6,16 +6,14 @@
     font-family:'Caveat', cursive;
 } 
 
-  /**{
-
+/**{
    outline: solid #f00 1px !important;
 } 
 */
 html, body {
     margin: 0;
     overflow-x: hidden;
-    background-color: #fff;
-  
+    background-color: #fff; 
 }
 
 
@@ -45,13 +43,11 @@ h2 {
     50% { border-color: white; }
 }
 
-
 nav .nav-link {
     color: #1d223e;
     text-shadow: .063rem .063rem .063rem #fff;
     font-weight: 900 !important;
-    font-size: 1.375rem;
-    
+    font-size: 1.375rem;  
 }
 
 nav .nav-link:hover {
@@ -63,6 +59,7 @@ nav .nav-link:hover {
     overflow:hidden;
 }
 
+/*-----MEDIA QUERIES-----*/
 
 @media screen and (max-width: 500px) {
     h2 {

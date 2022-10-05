@@ -1,36 +1,44 @@
-
 #explore {
     background-color: #fff;
     padding-top: 3rem;
-    padding-bottom: 3rem;
-    
+    padding-bottom: 3rem; 
 }
 
 .section-explore-header {
-background-image: url('../../assets/coconutpng.png');
-background-repeat: no-repeat;
-background-attachment: local;
-background-size:  contain;
-background-position: right;
-box-shadow: 0 0 8px 8px  white inset;
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
+   position: relative; 
+}
+
+.section-explore-header::before {
+    content: "";
+    background-image: url('../../assets/coconutpng.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-attachment: local;
+    background-size:  contain;
+    background-position: right;
+    box-shadow: 0 0 8px 8px  white inset;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+   
 }
 
 .gallery_explore {
-  height: auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 6rem;
-  margin-top: 0;
-  padding-top: 0;
- 
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .no_gutters {
     margin-right: 0;
     margin-left: 0;
 }
-
 
 .gallery_explore img {
     max-width: 100%;
@@ -51,29 +59,30 @@ margin-bottom: 3rem;
     margin-bottom: 0;
     padding-bottom: 0;
     cursor: pointer;
-  }
+}
 
-  .hover-image  {
+.hover-image  {
     box-sizing: border-box;
     transition: all 0.45s ease;
-  }
+}
 
 .hover-image::before,
 .hover-image::after {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: '';
-  transition: all 0.3s ease;
-  z-index: 1;
-  opacity: 0;
-  transform: scaleY(2);
-  margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+    margin-bottom: 0;
 }
-  .hover-image figcaption {
+
+.hover-image figcaption {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -89,28 +98,27 @@ margin-bottom: 3rem;
     z-index: 2;
     transition-delay: 0.1s;
     font-weight: 400;
-  }
+}
   
-  .hover-image img {
+.hover-image img {
     vertical-align: top;
     max-width: 100%;
     backface-visibility: hidden;
-  }
+}
 
-  .hover-image:hover::before,
-  .hover-image.hover-image:hover::after::after {
+.hover-image:hover::before,
+.hover-image.hover-image:hover::after::after {
     transform: scale(1);
     opacity: 1;
-  }
+}
   
-  .hover-image:hover > img {
+.hover-image:hover > img {
     opacity: 0.5;
-  }
+}
   
-  .hover-image:hover figcaption {
+.hover-image:hover figcaption {
     opacity: 1;
-  }
-
+}
 
 .section-explore-header > h3 {
     text-align: left;
@@ -133,6 +141,7 @@ margin-bottom: 3rem;
     letter-spacing: .1rem;
     z-index: 2;
     margin-right: 4rem;
+    text-shadow: 1px 1px 3px #fff;
 }
 
 .bottom-line {
@@ -141,50 +150,40 @@ margin-bottom: 3rem;
 }
 
 .explore-bottom-container {
-  padding-top: 5rem;
-  margin-bottom: 1rem;
-  
+    padding-top: 5rem;
+    margin-bottom: 1rem; 
 }
 
 .sea-turtle {
-  max-width: 25%;
-  z-index: 1;
-  background:transparent;
-  margin-left: 3rem;
-  padding-top: 2rem;
-  position: absolute;
-  float: left;
-  opacity: 0.9;
+    max-width: 25%;
+    z-index: 1;
+    background:transparent;
+    margin-left: 3rem;
+    padding-top: 2rem;
+    position: absolute;
+    float: left;
+    opacity: 0.9;
 }
-
-
 
 .water {
-  width: 100%;
-  float: center;
-  opacity: 0.1;
-  z-index: -1;
+    width: 100%;
+    float: center;
+    opacity: 0.1;
+    z-index: -1;
 }
 
-
+/*------MEDIA QUERIES------*/
 
 @media screen and (min-width: 300px) and (max-width: 575px) {
-
-
-    #explore > p {
-        font-size: 2.188rem;
-        
-    }
-
+    
     .section-explore-header > h3 {
       text-align: center;
+      padding-top: 1rem;
       margin: 0;
-     
     }
 
     .section-explore-header > h5 {
-      font-size: 1.2rem;
-      margin-right: 3.5rem;
-
+      font-size: 1.1rem;
+      margin-right: 3.9rem;
     }
 }

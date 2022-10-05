@@ -12,8 +12,9 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
   const Blog = () => {
+
+    //GSAP Timeline and ScrollTrigger
 
     const pageTitle= useRef();
     const elem5 = useRef();
@@ -22,8 +23,6 @@ gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
         
-          // create a context for all the GSAP animations and ScrollTriggers so we can revert() them in one fell swoop.
-    // A context also lets us scope all the selector text to the component (like feeding selector text through component.querySelectorAll(...)) 
           const ctx = gsap.context(() => {
 
             const tl = gsap.timeline();
@@ -34,6 +33,7 @@ gsap.registerPlugin(ScrollTrigger);
                     start: "top bottom",
                     end: "+=500",
                     scrub: 1,
+                   
                     //markers: true,
                 },
                 y: "-800%",
@@ -83,6 +83,7 @@ gsap.registerPlugin(ScrollTrigger);
                 x: "300%",
                 duration: 2
             }); 
+
             gsap.to([".blog-image-one img", ".blog-image-two img", ".blog-image-three img"], {
                 scrollTrigger: {
                     trigger: "#blog",
@@ -111,10 +112,9 @@ gsap.registerPlugin(ScrollTrigger);
            
           });
 
-          return () => ctx.revert(); //cleanup!
-    }, []);
-    
+          return () => ctx.revert();
 
+    }, []);
 
 
     return (
@@ -129,57 +129,49 @@ gsap.registerPlugin(ScrollTrigger);
                 <div className="blog-image-one"
                 xs={{
                     size: 12,
-                
                 }}
                 sm={{
-                    size:6,
-                  
+                    size:6, 
                 }}>
                     <img src={food} alt="plate of food" />
                     <div className="food-back"></div>
                 </div>
                 </Col>
+
                 <Col className="blog-info-one"
                 xs={{
                     size: 12
                 }}
                 sm={{
-                   
                     size: 6
-                }}>Eat like the locals and enjoy the best Painkiller on the island
+                }}
+                >
+                    Eat like the locals and enjoy the best Painkiller on the island
                 <h4>
                     <button>Read More</button>
                 </h4>
             
                 </Col>
                 </Row>
-                <div className="spacer-one">
-             
-                </div>
+                
+                <div className="spacer-one"></div>
            
                <Row>
-                <Col className="blog-image-two"
+               <Col className="blog-image-two"
                 xs={{
                     size: 12
                 }}
                 sm={{
                     size: 6,
                     order:'last',
-                  
                 }}
                 md={{
-                    
                     order: 'last',
-              
                     size: 6,
                 }}
                 >
-          
-              
-
                     <img src={cruz} alt="cruz bay" />
                     <div className="cruz-back"></div>
-                
                 </Col>
                
                 <Col className="blog-info-two"
@@ -192,19 +184,20 @@ gsap.registerPlugin(ScrollTrigger);
                 }}
                 md={{
                     order:'first',
-                   
                     size:6,
-                }}>
+                }}
+                >
                     Relax and enjoy the music and entertainment of paradise
                     <h4>
                         <button className="image-two-button">Read More</button>
                     </h4>
                 </Col>
+
                 </Row>
-                <div className="spacer-two">
-                </div>
+
+                <div className="spacer-two"></div>
               <Row>
-                <Col className="blog-image-three"
+              <Col className="blog-image-three"
                 xs={{
                     size: 12
                 }}
@@ -218,6 +211,7 @@ gsap.registerPlugin(ScrollTrigger);
                     <img src={turtle} alt="sea turtle" />
                     <div className="turtle-back"></div>
                 </Col>
+
                 <Col className="blog-info-three"
                 xs={{
                     size: 12
@@ -235,15 +229,13 @@ gsap.registerPlugin(ScrollTrigger);
                     </h4>
                 </Col>
                 </Row>
-             
             </Container>
-            <Row>
-        
-            <div className="blog-bottom-container">
-               <img src={sand} className="sand" alt="sand" ref={elem6}></img>
-                <img src={waves} className="waves" alt="waves" ref={elem7}></img>
-            </div>
-            </Row>
+                <Row>
+                    <div className="blog-bottom-container">
+                        <img src={sand} className="sand" alt="sand" ref={elem6}></img>
+                        <img src={waves} className="waves" alt="waves" ref={elem7}></img>
+                    </div>
+                </Row>
         </section>
     )
 }

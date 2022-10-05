@@ -7,12 +7,16 @@ import { useRef, useEffect} from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Contact = () => {
     
+    //GSAP w/ ScrollTrigger
+
     const formRef = useRef();
+
     useEffect(() => {
+
         let ctx = gsap.context(() => {
+
         gsap.from(formRef.current, {
             scrollTrigger: {
                 trigger: "#contact",
@@ -27,10 +31,12 @@ const Contact = () => {
 
         ScrollTrigger.refresh();
 
-          });
+        });
 
-          return () => ctx.revert();
-        }, []);
+        return () => ctx.revert();
+    }, []);
+
+    //Form Validation
 
     const handleSubmit = (values, { resetForm }) => {
         console.log('form values:', values);
@@ -48,13 +54,11 @@ const Contact = () => {
             errors.firstName = 'Must be 15 characters or less';
         }
     
-        
         if (!values.email) {
             errors.email = 'Required';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
             errors.email = 'Invalid email address';
         }
-    
         return errors;
     }
 
@@ -68,8 +72,8 @@ const Contact = () => {
         validateOnBlur={false}
         validateOnChange={false}
         onSubmit={handleSubmit}
-        
        >
+
         <section id="contact">
             <Container className="contact_us">
                 <h3 ref={formRef}>Join Our Mailing List</h3>
@@ -111,23 +115,18 @@ const Contact = () => {
                                 <Button type="submit" className="form_button">
                                     Register 
                                 </Button>
-                                
                                 <Button type="reset" className="form_button" onClick={handleSubmit.resetForm}>
                                     Reset
                                 </Button>
                             </Col>
                         </FormGroup>
                     </Form>
-                        </div>
-                    
+                        </div>  
                 </div>
-            
-     
             </Container>
         </section>
         </Formik>
     )
-
 }
 
 export default Contact;

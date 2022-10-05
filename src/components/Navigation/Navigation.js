@@ -22,6 +22,7 @@ const Navigation = (args) => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, []);
+
     return (
         <header>
             <Navbar {...args} 
@@ -47,8 +48,6 @@ const Navigation = (args) => {
                     style={{
                         color: "transparent",
                         border: ".125rem solid #5e6060",
-        
-                            
                     }} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ms-auto" navbar>

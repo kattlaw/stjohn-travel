@@ -4,9 +4,8 @@ import { faFacebook, faGithub, faLinkedin, faTwitter, faInstagram } from '@forta
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import './footer.css';
 
-
-
 const Footer = () => {
+
     return (
         <footer className="footer_stj">
             <Container>

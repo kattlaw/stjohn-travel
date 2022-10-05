@@ -34,8 +34,6 @@
     box-shadow: #858585 .063rem .125rem .5rem;
 }
 
-
-
 .form {
     float:right;
     text-align: center;
@@ -61,7 +59,6 @@
 .form > p {
     color: #858585;
     font-size: 1.25rem;
-
 }
 
 .form_button {
@@ -76,6 +73,7 @@
     color: #0a8789 !important;
 }
 
+/*-----MEDIA QUERIES-----*/
 
 @media screen and (max-width: 767px){
 	.image_form {
@@ -90,7 +88,6 @@
     .form-control {
         margin-left: .938rem;
     }
-
 }
 
 @media screen and (max-width: 505px){
