@@ -17,47 +17,44 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
   const Travel = () => {
 
     //GSAP
-    const title = useRef();
-    const elem1 = useRef();
-    const elem2 = useRef();
+
+    const title = useRef(null);
+    const elem1 = useRef(null);
+    const elem2 = useRef(null);
  
 
     useEffect(() => {
         
           let ctx = gsap.context(() => {
-            
-             gsap.from(title.current, {
-             
-                scrollTrigger: {
-                trigger: "#travel",
-                start: "top bottom",
-                end: "+=500",
-                //markers: true,
-                scrub: 1,
-              },
+            gsap.from(title.current, {
                 x: "-100%",
-                duration: 1
-             });
-             gsap.from([elem1.current, elem2.current], {
                 scrollTrigger: {
-                    trigger:"#travel",
+                    trigger:".travel-header",
                     start: "top bottom",
-                    end: "+=600",
+                    end: "+=500",
                     scrub: 1,
                     //markers: true,  
-                },
-                x:"100%",
-                duration: 2
+                }
+
+            });
+
+            gsap.from([elem1.current, elem2.current],{
+                x: "100%",
+                scrollTrigger: {
+                    trigger: title.current,
+                    start: "top bottom",
+                    end: "top center",
+                    //markers: true,
+                    scrub: 1,
+                  }
+                
              });
-
-             ScrollTrigger.refresh();
-           
+         
           });
-
+    
           return () => ctx.revert(); 
     }, []); 
 
@@ -65,8 +62,10 @@ gsap.registerPlugin(ScrollTrigger);
    
     return (
         <section id="travel">
+            <div className="travel-header">
             <h3 ref={title}> <span className="first">Travel</span> in <span className="second">Style</span> </h3>
             <h5 ref={elem1}> Visit St. John with the best tour packages</h5> <h5 ref={elem2}> available exclusively for your style </h5>
+            </div>
             <div className="swiper-container">
                 <div className="slider-wrapper">
             <Swiper
@@ -332,6 +331,7 @@ gsap.registerPlugin(ScrollTrigger);
         </section>
     )
 }
+
 
   export default Travel;
 

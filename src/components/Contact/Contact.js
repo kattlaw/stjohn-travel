@@ -11,7 +11,7 @@ const Contact = () => {
     
     //GSAP w/ ScrollTrigger
 
-    const formRef = useRef();
+    const formRef = useRef(null);
 
     useEffect(() => {
 
@@ -19,17 +19,16 @@ const Contact = () => {
 
         gsap.from(formRef.current, {
             scrollTrigger: {
-                trigger: "#contact",
+                trigger: formRef.current,
                 start: "top bottom",
                 end: "+=500",
                 //markers: true,
                 scrub: 1,
-                invalidateOnRefresh: true
+                //invalidateOnRefresh: true,
+              
             },
           x: "-300%",   
         });
-
-        ScrollTrigger.refresh();
 
         });
 

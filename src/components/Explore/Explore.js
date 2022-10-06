@@ -14,8 +14,8 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { gsap } from 'gsap';
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Explore = () => {
     const [lightboxController, setLightboxController] = useState({
@@ -32,15 +32,15 @@ const Explore = () => {
  
     //GSAP w/ ScrollTrigger
 
-    const titleRef = useRef();
-    const lineTwo = useRef();
-    const lineThree = useRef();
-    const turtleRef = useRef();
+    const titleRef = useRef(null);
+    const lineTwo = useRef(null);
+    const lineThree = useRef(null);
+    const turtleRef = useRef(null);
  
     useEffect(() => {
         
           let ctx = gsap.context(() => {
-
+         
              gsap.from(titleRef.current, {
                 scrollTrigger: {
                     trigger: "#explore",
@@ -48,7 +48,7 @@ const Explore = () => {
                     end: "+=500",
                     scrub: 1,
                     //markers: true,
-                    invalidateOnRefresh: true
+                    //invalidateOnRefresh: true
                 },
                 x:"-100%",
                 duration: 1,
@@ -61,7 +61,7 @@ const Explore = () => {
                     end:"+=500",
                     scrub: 2,
                     //markers: true,
-                    invalidateOnRefresh: true
+                    //invalidateOnRefresh: true
                 },
                 x:"100%",
                 duration: 2,
@@ -73,8 +73,6 @@ const Explore = () => {
             gsap.to(turtleRef.current, 2, {x: -e.clientX * 0.05, y: -e.clientY * 0.05});
 
         });
-   
-            ScrollTrigger.refresh(); 
            
         });
 

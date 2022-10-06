@@ -9,22 +9,24 @@ import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
+
 
   const Blog = () => {
 
     //GSAP Timeline and ScrollTrigger
 
-    const pageTitle= useRef();
-    const elem5 = useRef();
-    const elem6 = useRef();
-    const elem7 = useRef();
+    const pageTitle= useRef(null);
+    const elem5 = useRef(null);
+    const elem6 = useRef(null);
+    const elem7 = useRef(null);
+
+  
 
     useEffect(() => {
         
           const ctx = gsap.context(() => {
-
+      
             const tl = gsap.timeline();
 
             tl.from([pageTitle.current], {
@@ -36,7 +38,7 @@ gsap.registerPlugin(ScrollTrigger);
                    
                     //markers: true,
                 },
-                y: "-800%",
+                y: "-200%",
                 duration: 3
                 
             });
@@ -48,14 +50,14 @@ gsap.registerPlugin(ScrollTrigger);
                     scrub: 2,
                     //markers: true,
                 },
-                y: "1000%",
+                y: "200%",
                 duration: 3
                 
             });
             tl.from(".blog-info-one", {
                 scrollTrigger: {
                     trigger: ".blog-info-one",
-                    start: "top bottom +=250px",
+                    start: "top bottom +=250",
                     end: "+=500",
                     scrub: 3,
                     //markers: true, 
@@ -107,8 +109,6 @@ gsap.registerPlugin(ScrollTrigger);
                 y: -10,
                 duration: .3
             });     
-
-            ScrollTrigger.refresh();
            
           });
 
