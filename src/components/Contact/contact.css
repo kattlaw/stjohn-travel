@@ -1,6 +1,7 @@
 #contact {
     background-color:#fff;
     background-image: linear-gradient(rgba(208, 201, 201, 0.5), rgba(59, 59, 57, 0.5)),url('../../assets/stfrancis.jpeg');
+    width: 100vw;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -130,4 +131,14 @@
 
 }
 
+@media screen and (max-width: 300px){
+    /*#contact {
+        background-attachment: scroll;
+    }*/
+}
 
+@supports (-webkit-overflow-scrolling: touch) {
+    #contact {
+    background-attachment: scroll;
+    }
+  }

@@ -110,4 +110,8 @@
     .links_list {
         margin-left: 0;
     }
+
+    .google_map {
+        height: auto;
+    }
 }

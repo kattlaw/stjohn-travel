@@ -116,10 +116,11 @@
     padding-right: 1rem;
     background: transparent;
     text-transform: uppercase;
+    color: #000;
 }
 
 .blog-grid-container button:hover {
-    background:#1d223e;
+    background-color:#1d223e;
     color: #fff;
 }
 
@@ -381,7 +382,8 @@
 
    .blog-grid-container img {
         width:75%;
-        height: 100%;  
+        height: 100%;
+        padding-top: 1rem;  
    }
 
    .blog-grid-container .blog-info-one, .blog-info-two, .blog-info-three {
@@ -408,5 +410,9 @@
 
     .section-blog-header > h5 {
         font-size: 1.2rem;
+    }
+
+    .food-back, .cruz-back, .turtle-back {
+        display: none;
     }
 }

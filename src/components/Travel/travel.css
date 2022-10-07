@@ -31,7 +31,7 @@
 
 .first, .second {
     font-size: 4.5rem;
-    padding: 1rem;
+    padding: .1rem;
 }
 
 .swiper-container {
@@ -113,7 +113,7 @@
 @media screen and (min-width: 300px) and (max-width: 575px) {
 
     .travel-header > h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: .08rem;
     }
 }

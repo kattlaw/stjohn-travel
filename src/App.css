@@ -16,6 +16,19 @@ html, body {
     background-color: #fff; 
 }
 
+.background-image {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-color: #f1eded;
+    background-image: url('./assets/trunkbay.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 h2 {
     color: #fff;
@@ -29,7 +42,7 @@ h2 {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 8s steps(100, end),
+    animation: typing 5s steps(100, end),
     blink-caret .75s step-end infinite; 
 }
 
@@ -55,14 +68,20 @@ nav .nav-link:hover {
     text-shadow:.063rem .063rem .063rem #fff;
 }
 
-.welcome-container {
-    overflow:hidden;
-}
-
 /*-----MEDIA QUERIES-----*/
 
 @media screen and (max-width: 500px) {
     h2 {
-        font-size: 2.5rem !important;
+        font-size: 2.3rem !important;  
     }
 }
+
+/*@media screen and (max-width: 300px){
+ 
+}*/
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .background-image {
+    background-attachment: scroll;
+    }
+  }

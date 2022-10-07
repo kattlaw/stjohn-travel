@@ -183,7 +183,13 @@
     }
 
     .section-explore-header > h5 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin-right: 3.9rem;
     }
+
+    .gallery_explore img {
+      max-width: auto;
+      height: auto;
+    
+  }
 }
