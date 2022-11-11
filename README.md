@@ -1,4 +1,33 @@
-## Mock Travel Landing Page built with React
+# Travel St. John - A mock travel guide application
+
+## Mock travel webpage built with React
+
+#### By Katherine Law
+
+#### A one-page web application for the purpose of showcasing design and programming skills
+
+## Technologies Used
+
+* React
+* Javascript
+* CSS
+* Bootstrap / Reactstrap
+* HTML
+* GSAP 3
+* Swiper JS
+* Formik
+
+## Features
+
+* Mobile Responsiveness
+* Contact form with validation/errors
+* Animation
+* Lightbox Gallery
+* Swiper carousel
+* CSS Grid
+* React Hooks
+
+Copyright (c) 2022 Katherine Law
 
 <img width="1263" alt="Screen Shot 2022-10-07 at 9 47 15 AM" src="https://user-images.githubusercontent.com/97987865/194569069-b3f62bc7-95fd-4d8d-bf96-edab3f35a9c2.png">
 <img width="858" alt="Screen Shot 2022-10-07 at 9 52 11 AM" src="https://user-images.githubusercontent.com/97987865/194570466-a1104f99-a8f1-432d-8a9a-3bebe24e6f60.png">
