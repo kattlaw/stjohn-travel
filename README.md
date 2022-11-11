@@ -2,6 +2,8 @@
 
 ## Mock travel webpage built with React
 
+http://travel-st-john.netlify.app
+
 #### By Katherine Law
 
 #### A one-page web application for the purpose of showcasing design and programming skills
