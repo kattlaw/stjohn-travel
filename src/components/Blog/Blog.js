@@ -21,13 +21,13 @@ gsap.registerPlugin(ScrollTrigger);
     const elem6 = useRef(null);
     const elem7 = useRef(null);
 
-  
+    const tl = gsap.timeline();
 
     useEffect(() => {
         
           const ctx = gsap.context(() => {
       
-            const tl = gsap.timeline();
+      
 
             tl.from([pageTitle.current], {
                 scrollTrigger: {
@@ -114,7 +114,7 @@ gsap.registerPlugin(ScrollTrigger);
 
           return () => ctx.revert();
 
-    }, []);
+    }, [tl]);
 
 
     return (
